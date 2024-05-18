@@ -1,4 +1,4 @@
 set SAVESTAMP=%DATE:/=-%@%TIME::=-%
-SAVESTAMP=%SAVESTAMP: =%
+set SAVESTAMP=%SAVESTAMP: =%
 git add -A
 git commit -m "%SAVESTAMP%"
