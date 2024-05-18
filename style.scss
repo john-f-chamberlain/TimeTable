@@ -93,12 +93,12 @@ body {
         content : "🎲";
       }
 
-      &.trophy:before{
-        content: "🏆"
+      &.trophy:before {
+        content : "🏆"
       }
 
-      &.medal:before{
-        content: "🏅"
+      &.medal:before {
+        content : "🏅"
       }
 
       position  : absolute;
@@ -171,7 +171,7 @@ body {
 }
 
 
-.current-time-line {
+#current-time-line {
   position         : absolute;
   top              : 0;
   bottom           : 0;
