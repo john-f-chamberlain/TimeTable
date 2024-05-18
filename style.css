@@ -47,7 +47,7 @@ body {
 #timetable {
   position: relative;
 }
-#timetable > div {
+#timetable > div:not(#current-time-line) {
   position: absolute;
   box-sizing: border-box;
   display: flex;
@@ -59,10 +59,10 @@ body {
   background-color: #abd5ff;
   border: 1px solid #304976;
 }
-#timetable > div .title {
+#timetable > div:not(#current-time-line) .title {
   font-size: 14px;
 }
-#timetable > div .time {
+#timetable > div:not(#current-time-line) .time {
   font-size: 12px;
   display: flex;
   align-items: center;
@@ -71,33 +71,33 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-#timetable > div .icon-time {
+#timetable > div:not(#current-time-line) .icon-time {
   margin-right: 5px;
 }
-#timetable > div .icon-time:before {
+#timetable > div:not(#current-time-line) .icon-time:before {
   content: "🕑";
 }
-#timetable > div .event-icon {
+#timetable > div:not(#current-time-line) .event-icon {
   position: absolute;
   top: 0;
   right: 0;
   font-size: 18px;
   color: white;
 }
-#timetable > div .event-icon.board-game:before {
+#timetable > div:not(#current-time-line) .event-icon.board-game:before {
   content: "🎲";
 }
-#timetable > div .event-icon.trophy:before {
+#timetable > div:not(#current-time-line) .event-icon.trophy:before {
   content: "🏆";
 }
-#timetable > div .event-icon.medal:before {
+#timetable > div:not(#current-time-line) .event-icon.medal:before {
   content: "🏅";
 }
-#timetable > div.block {
+#timetable > div:not(#current-time-line).block {
   font-weight: bold;
   background: repeating-linear-gradient(45deg, #e0e0e0, #e0e0e0 10px, #cccccc 10px, #cccccc 20px);
 }
-#timetable > div::after {
+#timetable > div:not(#current-time-line)::after {
   content: "";
   display: block;
   width: 100%;

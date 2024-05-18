@@ -54,7 +54,7 @@ body {
 #timetable {
   position : relative;
 
-  > div {
+  > div:not(#current-time-line) {
     position         : absolute;
     box-sizing       : border-box;
     display          : flex;
