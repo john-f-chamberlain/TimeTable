@@ -203,7 +203,7 @@ $(function () {
         document.onkeydown = resetTimer
 
         function inactive(){
-            document.window.inactive = true;
+            inactive = true;
         }
 
         function resetTimer(){
