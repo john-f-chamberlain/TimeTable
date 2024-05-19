@@ -204,7 +204,8 @@ $(function () {
         document.onkeydown = resetTimer
 
         function resetTimer(){
-            
+            clearTimeout(time);
+            time= setTimeout
         }
     }
 
