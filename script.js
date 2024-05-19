@@ -230,6 +230,8 @@ $(function () {
         }
     }
 
+    inactivityTimer();
+
 });
 
 
