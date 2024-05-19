@@ -189,7 +189,7 @@ $(function () {
 
         $("#current-time-line").css("left", leftPx + "px");
 
-        document.getElementById('timetable-container').scrollLeft = leftPx;
+        document.getElementById('timetable-container').scrollLeft = leftPx - 200;
     }
 
     updateCurrentTime();
