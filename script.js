@@ -179,7 +179,7 @@ $(function () {
 
         let dayOffset = event_days.indexOf(day);
 
-        $("#stages > div:first-child").text("")
+        $("#stages > div:first-child").text(hour + ":" + minute + ":" + second);
 
         if (hour < $start_time || hour > $end_time) {
             if (hour < $start_time) {
