@@ -25,8 +25,9 @@ body {
   flex-direction: column;
   align-items: center;
   z-index: 3;
+  text-align: center;
 }
-#stages text- div {
+#stages div {
   height: 100px;
   width: 100%;
   display: flex;
