@@ -175,7 +175,7 @@ $(function () {
         let second = d.getSeconds();
 
         let dayOffset = event_days.indexOf(day);
-        let left
+        let leftPx = dayOffset * $px_day + (hour + minute / 60 + second / 3600 ) * 240
 
 
     }
