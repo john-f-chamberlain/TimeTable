@@ -198,7 +198,7 @@ $(function () {
 
     let inactive = false;
 
-    function setInactive() {
+    function setInactive(inactive) {
         inactive = true;
     }
 
