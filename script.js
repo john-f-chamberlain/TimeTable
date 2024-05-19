@@ -200,6 +200,9 @@ $(function () {
     function inactivityTimer() {
         var time;
         window.onload = resetTimer
+        document.onmousemove = resetTimer
+        document.onkeydown = resetTimer
+
         
     }
 
