@@ -169,5 +169,7 @@ $(function () {
 
 
 function updateCurrentTime(){
-    
+    const d = new Date();
+
+    let day = $day_names[d.getDay()];
 }
