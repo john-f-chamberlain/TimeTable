@@ -177,7 +177,7 @@ $(function () {
         let dayOffset = event_days.indexOf(day);
 
         let leftPx;
-        if ( hour < $start_time)
+        if ( hour < $start_time || $)
         //= (dayOffset * $px_day) + ((hour + (minute / 60) + (second / 3600)) * 240)
 
         $("#current-time-line").css("left", leftPx + "px");
