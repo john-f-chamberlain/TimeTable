@@ -173,7 +173,7 @@ $(function () {
         const d = new Date();
 
         let day = $day_names[d.getDay()];
-        let hour = d.getHours() - $start_time;
+        let hour = d.getHours();
         let minute = d.getMinutes();
         let second = d.getSeconds();
 
