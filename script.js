@@ -228,6 +228,8 @@ $(function () {
             clearTimeout(time);
             time = setTimeout(isInactive, 1000 * 10);
         }
+
+        resetTimer();
     }
 
     inactivityTimer();
