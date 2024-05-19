@@ -205,7 +205,7 @@ $(function () {
 
         function resetTimer(){
             clearTimeout(time);
-            time= setTimeout
+            time= setTimeout()
         }
     }
 
