@@ -182,7 +182,7 @@ $(function () {
 
         $("#stages > div:first-child").text(hourOffset + ":" + minute + ":" + second);
 
-        if (hourOffset < $start_time || hourOffset > $end_time) {
+        if (hour < $start_time || hour > $end_time) {
             if (hourOffset < $start_time) {
                 dayOffset--;
             }
