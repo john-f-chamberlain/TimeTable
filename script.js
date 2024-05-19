@@ -180,6 +180,8 @@ $(function () {
 
         let dayOffset = event_days.indexOf(day);
 
+        let hour12=hourOffset > 12
+
         $("#stages > div:first-child").text(hour + ":" + minute + ":" + second);
 
         if (hour < $start_time || hour > $end_time) {
