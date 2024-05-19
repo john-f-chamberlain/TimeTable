@@ -198,8 +198,8 @@ $(function () {
 
     let inactive = false;
 
-    function setInactive() {
-        inactive = true;
+    function setInactive(isInactive) {
+        inactive = isInactive;
     }
 
     function inactivityTimer() {
