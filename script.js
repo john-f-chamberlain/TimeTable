@@ -203,7 +203,9 @@ $(function () {
         document.onmousemove = resetTimer
         document.onkeydown = resetTimer
 
-        
+        function resetTimer(){
+            
+        }
     }
 
 });
