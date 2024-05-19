@@ -176,6 +176,7 @@ $(function () {
 
         let dayOffset = event_days.indexOf(day);
 
+        
 
     }
 
