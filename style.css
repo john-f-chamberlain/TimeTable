@@ -26,7 +26,7 @@ body {
   align-items: center;
   z-index: 3;
 }
-#stages div {
+#stages text-0a div {
   height: 100px;
   width: 100%;
   display: flex;
