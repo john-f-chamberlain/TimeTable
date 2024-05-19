@@ -173,23 +173,23 @@ $(function () {
         const d = new Date();
 
         let day = $day_names[d.getDay()];
-        let hour = d.getHours();
+        let offset_hour = d.getHours();
         let minute = d.getMinutes();
         let second = d.getSeconds();
 
         let dayOffset = event_days.indexOf(day);
 
-        $("#stages > div:first-child").text(hour + ":" + minute + ":" + second);
+        $("#stages > div:first-child").text(offset_hour + ":" + minute + ":" + second);
 
-        if (hour < $start_time || hour > $end_time) {
-            if (hour < $start_time) {
+        if (offset_hour < $start_time || offset_hour > $end_time) {
+            if (offset_hour < $start_time) {
                 dayOffset--;
             }
-            hour = $end_time + 1;
+            offset_hour = $end_time + 1;
             minute = 0;
             second = 0;
         }
-        let leftPx = (dayOffset * $px_day) + ((hour + (minute / 60) + (second / 3600)) * 240)
+        let leftPx = (dayOffset * $px_day) + ((offset_hour + (minute / 60) + (second / 3600)) * 240)
 
         $("#current-time-line").css("left", leftPx + "px");
         if (inactive) {
