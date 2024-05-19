@@ -204,7 +204,7 @@ $(function () {
         document.onkeydown = resetTimer
 
         function inactive(){
-            
+            inactive = true;
         }
 
         function resetTimer(){
