@@ -175,8 +175,8 @@ $(function () {
         let second = d.getSeconds();
 
         let dayOffset = event_days.indexOf(day);
+        let left
 
-        
 
     }
 
