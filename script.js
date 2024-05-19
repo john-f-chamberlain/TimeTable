@@ -183,7 +183,7 @@ $(function () {
         let hour12 = hour % 12 || 12;
         let ampm = hour > 12 ? "PM" : "AM";
 
-        $("#stages > div:first-child").text(hour12 + ":" + minute + ":" + second + " ");
+        $("#stages > div:first-child").text(hour12 + ":" + minute + ":" + second + " " + ampm);
 
         if (hour < $start_time || hour > $end_time) {
             if (hour < $start_time) {
