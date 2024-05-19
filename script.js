@@ -181,6 +181,7 @@ $(function () {
         let dayOffset = event_days.indexOf(day);
 
         let print_hour = hour % 12 || 12;
+        let print_minute = minute
         let ampm = hour > 12 ? "PM" : "AM";
 
         $("#stages > div:first-child").text(print_hour + ":" + minute + ":" + second + " " + ampm);
