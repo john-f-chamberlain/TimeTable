@@ -196,6 +196,9 @@ $(function () {
 
     updateCurrentTime();
     setInterval(updateCurrentTime, 1000);
+
+    
+
 });
 
 
