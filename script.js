@@ -197,19 +197,21 @@ $(function () {
     setInterval(updateCurrentTime, 1000);
 
     let inactive = false;
+
+    function inactive() {
+        inactive = true;
+    }
+
     function inactivityTimer() {
         var time;
         window.onload = resetTimer
         document.onmousemove = resetTimer
         document.onkeydown = resetTimer
 
-        function inactive(){
-            inactive = true;
-        }
 
-        function resetTimer(){
+        function resetTimer() {
             clearTimeout(time);
-            time= setTimeout()
+            time = setTimeout()
         }
     }
 
