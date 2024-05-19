@@ -166,9 +166,6 @@ $(function () {
             .css("height", blockHeight + "px");
     });
 
-    // var timetableContainer = document.getElementById('timetable-container');
-    // timetableContainer.scrollLeft = 5520;
-
     function updateCurrentTime() {
         const d = new Date();
 
