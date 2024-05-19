@@ -110,7 +110,7 @@ $(function () {
 
     // Events
     $("#timetable > div:not(#current-time-line)").each(function () {
-        let inactive = false;
+        
         let $event = $(this);
         let stage = $event.data("stage");
         let day = $event.data("day");
