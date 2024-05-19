@@ -199,6 +199,7 @@ $(function () {
 
     function inactivityTimer() {
         var time;
+        window.onload = resetTimer
         
     }
 
