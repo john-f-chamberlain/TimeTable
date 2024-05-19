@@ -76,7 +76,6 @@ window.addEventListener("load", function () {
 
 
 $(function () {
-    let inactive = false;
     const times = $(".headers.times");
     const days = $(".headers.days");
     const $start_time = times.data("start");
@@ -203,13 +202,13 @@ $(function () {
         document.onmousemove = resetTimer
         document.onkeydown = resetTimer
 
-        function inactive() {
+        function inactive(){
             inactive = true;
         }
 
-        function resetTimer() {
+        function resetTimer(){
             clearTimeout(time);
-            time = setTimeout()
+            time= setTimeout()
         }
     }
 
