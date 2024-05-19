@@ -165,6 +165,18 @@ $(function () {
 
     var timetableContainer = document.getElementById('timetable-container');
     timetableContainer.scrollLeft = 5520;
+
+    function updateCurrentTime() {
+        const d = new Date();
+
+        let day = $day_names[d.getDay()];
+        let hour = d.getHours();
+        let minute = d.getMinutes();
+        let second = d.getSeconds();
+
+        let dayOffset = event_days.indexOf(day);
+
+    }
 });
 
 
