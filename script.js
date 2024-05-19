@@ -189,8 +189,9 @@ $(function () {
         let leftPx = (dayOffset * $px_day) + ((hour + (minute / 60) + (second / 3600)) * 240)
 
         $("#current-time-line").css("left", leftPx + "px");
-
-        document.getElementById('timetable-container').scrollLeft = leftPx - 200;
+        if (inactive) {
+            document.getElementById('timetable-container').scrollLeft = leftPx - 200;
+        }
     }
 
     updateCurrentTime();
