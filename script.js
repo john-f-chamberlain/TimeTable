@@ -163,8 +163,8 @@ $(function () {
             .css("height", blockHeight + "px");
     });
 
-    var timetableContainer = document.getElementById('timetable-container');
-    timetableContainer.scrollLeft = 5520;
+    // var timetableContainer = document.getElementById('timetable-container');
+    // timetableContainer.scrollLeft = 5520;
 
     function updateCurrentTime() {
         const d = new Date();
@@ -178,7 +178,7 @@ $(function () {
 
 
         if (hour < $start_time || hour > $end_time) {
-            if ( hour < $start_time){
+            if (hour < $start_time) {
                 dayOffset--;
             }
             hour = $end_time + 1;
