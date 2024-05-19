@@ -222,6 +222,7 @@ $(function () {
         }
 
         function resetTimer() {
+            console.log("Resetting Timer");
             notInactive();
             clearTimeout(time);
             time = setTimeout(isInactive, 1000 * 10);
