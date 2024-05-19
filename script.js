@@ -172,9 +172,9 @@ function updateCurrentTime(){
     const d = new Date();
 
     let day = $day_names[d.getDay()];
-    let hour = $day_names[d.getHours()];
-    let minute = $day_names[d.getMinutes()];
-    let second = $day_names[d.getSeconds()];
+    let hour = d.getHours();
+    let minute = d.getMinutes();
+    let second = d.getSeconds();
 
-    
+
 }
