@@ -196,6 +196,7 @@ $(function () {
     updateCurrentTime();
     setInterval(updateCurrentTime, 1000);
 
+    let inactive = false;
     function inactivityTimer() {
         var time;
         window.onload = resetTimer
