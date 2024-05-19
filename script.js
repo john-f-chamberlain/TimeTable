@@ -217,8 +217,8 @@ $(function () {
         }
 
         function resetTimer() {
-            clearTimeout(time);
             notInactive();
+            clearTimeout(time);
             time = setTimeout(isInactive, 1000 * 60 * 5);
         }
     }
