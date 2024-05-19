@@ -76,6 +76,7 @@ window.addEventListener("load", function () {
 
 
 $(function () {
+    let inactive = false;
     const times = $(".headers.times");
     const days = $(".headers.days");
     const $start_time = times.data("start");
@@ -110,7 +111,7 @@ $(function () {
 
     // Events
     $("#timetable > div:not(#current-time-line)").each(function () {
-        
+
         let $event = $(this);
         let stage = $event.data("stage");
         let day = $event.data("day");
