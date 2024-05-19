@@ -218,6 +218,7 @@ $(function () {
 
         function resetTimer() {
             clearTimeout(time);
+            notInactive();
             time = setTimeout(isInactive, 1000 * 60 * 5);
         }
     }
