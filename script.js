@@ -201,7 +201,6 @@ $(function () {
 
 
     function setInactive(isInactive) {
-        console.log("Setting Inactive", isInactive);
         inactive = isInactive;
     }
 
