@@ -188,6 +188,8 @@ $(function () {
         let leftPx = (dayOffset * $px_day) + ((hour + (minute / 60) + (second / 3600)) * 240)
 
         $("#current-time-line").css("left", leftPx + "px");
+
+        
     }
 
     updateCurrentTime();
