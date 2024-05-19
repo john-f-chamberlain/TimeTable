@@ -198,6 +198,7 @@ $(function () {
     setInterval(updateCurrentTime, 1000);
 
     function inactivityTimer() {
+        var time;
         
     }
 
