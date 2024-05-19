@@ -74,7 +74,7 @@ window.addEventListener("load", function () {
         .addEventListener("scroll", updatePositions);
 });
 
-
+var inactivityTime
 
 $(function () {
     const times = $(".headers.times");
