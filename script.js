@@ -197,7 +197,7 @@ $(function () {
     updateCurrentTime();
     setInterval(updateCurrentTime, 1000);
 
-    let inactive = false;
+
 
     function setInactive(isInactive) {
         inactive = isInactive;
