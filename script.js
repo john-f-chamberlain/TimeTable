@@ -181,7 +181,6 @@ $(function () {
             hour = $end_time + 1;
             minute = 0;
             second = 0;
-
         }
         let leftPx = (dayOffset * $px_day) + ((hour + (minute / 60) + (second / 3600)) * 240)
 
