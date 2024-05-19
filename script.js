@@ -168,7 +168,7 @@ $(function () {
 });
 
 
-function updateCurrentTime(){
+function updateCurrentTime() {
     const d = new Date();
 
     let day = $day_names[d.getDay()];
@@ -176,5 +176,6 @@ function updateCurrentTime(){
     let minute = d.getMinutes();
     let second = d.getSeconds();
 
+    let dayOffset = event_days.indexOf(day);
 
 }
