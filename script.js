@@ -205,10 +205,13 @@ $(function () {
     }
 
     function inactivityTimer() {
-        var time;
-        window.onload = resetTimer
-        document.onmousemove = resetTimer
-        document.onkeydown = resetTimer
+        let time;
+        document.onload = resetTimer;
+        document.onmousemove = resetTimer;
+        document.onmousedown = resetTimer; // touchscreen presses
+        document.ontouchstart = resetTimer;
+        document.onclick = resetTimer;     // touchpad clicks
+        document.onkeydown = resetTimer;   // onkeypress is deprectaed
 
         function isInactive() {
             setInactive(true);
