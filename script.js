@@ -185,7 +185,7 @@ $(function () {
         let print_second = second < 10 ? `0${second}` : second;
         let ampm = hour > 12 ? "PM" : "AM";
 
-        $("#stages > div:first-child").text(print_hour + ":" + print_minute + ":" + print_second + " " + ampm);
+        $("#stages > div:first-child").html(print_hour + ":" + print_minute + ":" + print_second + " " + ampm);
 
         if (hour < $start_time || hour > $end_time) {
             if (hour < $start_time) {
