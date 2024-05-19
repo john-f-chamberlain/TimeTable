@@ -208,17 +208,17 @@ $(function () {
         document.onmousemove = resetTimer
         document.onkeydown = resetTimer
 
-        function isInactive(){
+        function isInactive() {
             setInactive(true);
         }
 
         function notInactive() {
-            
+            setInactive(false);
         }
 
         function resetTimer() {
             clearTimeout(time);
-            time = setTimeout(isInactive, 1000*60*5);
+            time = setTimeout(isInactive, 1000 * 60 * 5);
         }
     }
 
