@@ -178,8 +178,10 @@ $(function () {
 
         let leftPx;
         if ( hour < $start_time || hour > $end_time ) {
-            hour= $end_time;
-            
+            hour = $end_time + 1;
+            minute = 0;
+            second = 0;
+
         }
         //= (dayOffset * $px_day) + ((hour + (minute / 60) + (second / 3600)) * 240)
 
