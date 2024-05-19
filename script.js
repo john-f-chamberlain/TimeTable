@@ -208,6 +208,7 @@ $(function () {
         document.onmousemove = resetTimer
         document.onkeydown = resetTimer
 
+        isInactive
 
         function resetTimer() {
             clearTimeout(time);
