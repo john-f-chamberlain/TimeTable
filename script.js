@@ -178,6 +178,7 @@ $(function () {
 
 
         if (hour < $start_time || hour > $end_time) {
+            if ( hour )
             hour = $end_time + 1;
             minute = 0;
             second = 0;
