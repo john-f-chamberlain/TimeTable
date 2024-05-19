@@ -179,7 +179,7 @@ $(function () {
 
         if (hour < $start_time || hour > $end_time) {
             if ( hour < $start_time){
-                
+                dayOffset--;
             }
             hour = $end_time + 1;
             minute = 0;
