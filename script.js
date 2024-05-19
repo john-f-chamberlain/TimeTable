@@ -74,6 +74,7 @@ window.addEventListener("load", function () {
         .addEventListener("scroll", updatePositions);
 });
 
+let inactive = false;
 $(function () {
     const times = $(".headers.times");
     const days = $(".headers.days");
