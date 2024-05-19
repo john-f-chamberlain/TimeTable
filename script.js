@@ -176,7 +176,10 @@ $(function () {
 
         let dayOffset = event_days.indexOf(day);
 
+
     }
+
+    setInterval(updateCurrentTime, 1000);
 });
 
 
